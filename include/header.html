@@ -1,0 +1,26 @@
+<script>
+	$(function(){
+		$('#js-hamburger-menu').on('click', function () {
+			$('header nav').slideToggle(500)
+			$('.hamburger-menu').toggleClass('hamburger-menu--open')
+			$('header nav').toggleClass('active')
+		});
+	});
+</script>
+
+<div class="logo"><a href="/"></a></div>
+		<button class="hamburger-menu" id="js-hamburger-menu">
+			<span class="hamburger-menu__bar"></span>
+			<span class="hamburger-menu__bar"></span>
+			<span class="hamburger-menu__bar"></span>
+		</button>
+		<nav>
+			<ul>
+				<li><a href="">Products</a></li>
+				<li><a href="">Media</a></li>
+				<li><a href="">Member</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Company</a></li>
+				<li><a href="">Recruit</a></li>
+			</ul>
+		</nav>
