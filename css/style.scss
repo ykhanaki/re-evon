@@ -48,7 +48,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 body {
-    position: relative;
+  position: relative;
 	font-family: "Helvetica Neue",'Noto Sans JP',Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
 	font-size: 1.0rem;
 	color: #111;
@@ -269,7 +269,7 @@ header {
 			opacity: 1;
 		}
 	}
-	
+
 	h2 {
 		position: absolute;
 		left: 0;
@@ -1290,3 +1290,128 @@ section {
 }
 
 
+/* contact
+----------------------------------------------------*/
+#contact {
+	margin: 80px auto;
+	@media screen and (max-width: $bp-sp) {
+		margin: 54px auto 0;
+	}
+}
+
+.contact_header {
+	margin-bottom: 40px;
+	padding: 80px 0 0;
+	position: relative;
+	@media screen and (max-width: $bp-sp) {
+		padding-top: 64px;
+	}
+}
+
+.contact_body {
+	margin: 90px auto 148px;
+	width: min(100%, 630px);
+	@media screen and (max-width: $bp-sp) {
+		margin: 48px auto 96px;
+		width: 100%;
+	}
+}
+
+.contact_table {
+	width: 100%;
+
+	th,td {
+		display: block;
+	}
+
+	th {
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 20px;
+		text-align: left;
+		@media screen and (max-width: $bp-sp) {
+			font-size: 1.5rem;
+			margin-bottom: 16px;
+		}
+	}
+
+	td {
+		margin-bottom: 30px;
+		height: auto;
+		width: 100%;
+		@media screen and (max-width: $bp-sp) {
+			margin-bottom: 24px;
+		}
+		&.last {
+			margin-bottom: 0;
+		}
+	}
+
+	.form_txt {
+		background: #f7f7f7;
+		border: 1px solid $line;
+		border-radius: 5px;
+		font-size: 2rem;
+		padding-left: 18px;
+		height: 70px;
+		width: 100%;
+		@media screen and (max-width: $bp-sp) {
+			font-size: 1.5rem;
+			height: 60px;
+		}
+
+		&--textarea {
+			height: 300px;
+			@media screen and (max-width: $bp-sp) {
+				height: 200px;
+			}
+		}
+	}
+
+	::placeholder {
+		color: #acacac;
+	}
+}
+
+.select-box {
+	width: 100%;
+	position: relative;
+	&::before {
+		content: '';
+		background: url('../img/contact_arrow.svg') no-repeat center / contain;
+		position: absolute;
+		top: 50%;
+		right: 21px;
+		pointer-events: none;
+		height: 8px;
+		width: 13px;
+	}
+
+	&__item {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 100%;
+	}
+}
+
+.contact_btn {
+	margin: 65px auto 0;
+	width: min(100%, 450px);
+	@media screen and (max-width: $bp-sp) {
+		margin-top: 48px;
+		width: 100%;
+	}
+	button {
+		background: $black;
+		color: $white;
+		font-size: 2rem;
+		height: 80px;
+		width: 100%;
+		@media screen and (max-width: $bp-sp) {
+			height: 70px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

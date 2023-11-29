@@ -47,8 +47,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b, strong {
@@ -206,8 +205,7 @@ template {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -262,6 +260,7 @@ img {
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -282,16 +281,20 @@ fieldset {
   border: none;
 }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
 input:focus::placeholder {
   color: transparent;
-}
-
-::-moz-placeholder {
-  color: #E8E8E8;
 }
 
 ::placeholder {
@@ -382,9 +385,7 @@ header .hamburger-menu {
   position: relative;
   border: none;
   background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 0;
   cursor: pointer;
   display: none;
@@ -437,8 +438,7 @@ header .hamburger-menu.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
   transition: opacity 0.7s;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .bottom_btn a {
   width: 50%;
@@ -742,6 +742,7 @@ section {
   }
 }
 section h5 {
+  position: -webkit-sticky;
   position: sticky;
   top: 32px;
   left: 0;
@@ -1241,8 +1242,7 @@ section .contents {
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  column-gap: 16px;
   margin-top: 40px;
   font-weight: 500;
 }
@@ -1632,4 +1632,141 @@ section .contents {
     margin-bottom: 2em;
     width: 100%;
   }
+}
+
+/* contact
+----------------------------------------------------*/
+#contact {
+  margin: 80px auto;
+}
+@media screen and (max-width: 768px) {
+  #contact {
+    margin: 54px auto 0;
+  }
+}
+
+.contact_header {
+  margin-bottom: 40px;
+  padding: 80px 0 0;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .contact_header {
+    padding-top: 64px;
+  }
+}
+
+.contact_body {
+  margin: 90px auto 148px;
+  width: min(100%, 630px);
+}
+@media screen and (max-width: 768px) {
+  .contact_body {
+    margin: 48px auto 96px;
+    width: 100%;
+  }
+}
+
+.contact_table {
+  width: 100%;
+}
+.contact_table th, .contact_table td {
+  display: block;
+}
+.contact_table th {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .contact_table th {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+}
+.contact_table td {
+  margin-bottom: 30px;
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .contact_table td {
+    margin-bottom: 24px;
+  }
+}
+.contact_table td.last {
+  margin-bottom: 0;
+}
+.contact_table .form_txt {
+  background: #f7f7f7;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding-left: 18px;
+  height: 70px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .contact_table .form_txt {
+    font-size: 1.5rem;
+    height: 60px;
+  }
+}
+.contact_table .form_txt--textarea {
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .contact_table .form_txt--textarea {
+    height: 200px;
+  }
+}
+.contact_table ::placeholder {
+  color: #acacac;
+}
+
+.select-box {
+  width: 100%;
+  position: relative;
+}
+.select-box::before {
+  content: "";
+  background: url("../img/contact_arrow.svg") no-repeat center/contain;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  pointer-events: none;
+  height: 8px;
+  width: 13px;
+}
+.select-box__item {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.contact_btn {
+  margin: 65px auto 0;
+  width: min(100%, 450px);
+}
+@media screen and (max-width: 768px) {
+  .contact_btn {
+    margin-top: 48px;
+    width: 100%;
+  }
+}
+.contact_btn button {
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  height: 80px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .contact_btn button {
+    height: 70px;
+  }
+}
+.contact_btn button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

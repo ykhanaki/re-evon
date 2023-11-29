@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>お問い合わせ｜株式会社リーヴォン[Re:evon]</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="cursor" class="cursor"></div>
+	<header id="header"></header>
+	<div id="contact" class="container">
+		<h2 class="contact_header">
+			<ruby>お問い合わせ</ruby>
+			Contact
+		</h2>
+		<p class="contact_read">
+			サービス・採用に関するご質問、ご相談は以下の必要事項をご記入の上お問い合わせください。<br>
+			2～3営業日以内に、担当よりメールにて返信させていただきます。
+		</p>
+		<div class="contact_body">
+			<form action="" method="">
+				<table class="contact_table">
+					<tbody>
+						<tr>
+							<th>
+								<label for="category">カテゴリー</label>
+							</th>
+							<td>
+								<div class="select-box">
+									<select name="category" id="category" class="form_txt select-box__item">
+										<option value="ITシステムの開発について" selected>ITシステムの開発について</option>
+										<option value="ダミー2">ダミー2</option>
+										<option value="ダミー3">ダミー3</option>
+										<option value="ダミー4">ダミー4</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								<label for="company">会社名</label>
+							</th>
+							<td>
+								<input type="text" name="company" id="company" placeholder="株式会社リーヴォン" class="form_txt">
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								<label for="name">お名前</label>
+							</th>
+							<td>
+								<input type="text" name="name" id="name" class="form_txt" placeholder="山田 太郎">
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								<label for="email">メールアドレス</label>
+							</th>
+							<td>
+								<input type="email" name="email" id="email" class="form_txt" placeholder="Re-evon@gmail.com">
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								<label for="textarea">ご希望・ご要望</label>
+							</th>
+							<td class="last">
+								<textarea name="textarea" id="textarea"  class="form_txt form_txt--textarea"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="contact_btn">
+					<button type="submit" class="">送信</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div id="footer"></div>
+
+	<style>
+		.bottom_btn {display: none;}
+	</style>
+</body>
+</html>
