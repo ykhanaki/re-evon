@@ -6,7 +6,7 @@ $(function(){
 	$("#footer").load("./include/footer.html");
 
 	// カーソル用のdivタグを取得してcursorに格納
-	var cursor = document.getElementById('cursor'); 
+	var cursor = document.getElementById('cursor');
 
 	// カーソル用のdivタグをマウスに追従させる
 	document.addEventListener('mousemove', function (e) {
@@ -20,7 +20,7 @@ $(function(){
 			cursor.classList.add('cursorhover');
 		});
 		link[i].addEventListener('mouseout', function (e) {
-			cursor.classList.remove('cursorhover');   
+			cursor.classList.remove('cursorhover');
 		});
 	}
 	var link = document.querySelectorAll('a.learnmore');
@@ -29,7 +29,7 @@ $(function(){
 			cursor.classList.add('cursorhover_learnmore');
 		});
 		link[i].addEventListener('mouseout', function (e) {
-			cursor.classList.remove('cursorhover_learnmore');   
+			cursor.classList.remove('cursorhover_learnmore');
 		});
 	}
 
@@ -46,4 +46,18 @@ $(function(){
 	  $(".service_sample dt").on("click", function() {
 			$(this).next().slideToggle();
 		});
+});
+
+// ふわっと表示
+$(function(){
+  $(window).scroll(function (){
+    $('.js-fade').each(function(){
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > pos - windowHeight + 100){
+        $(this).addClass('scrollIn');
+      }
+    });
+  });
 });

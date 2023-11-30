@@ -1860,4 +1860,16 @@ section .contents {
   .company_table td {
     line-height: 1.6;
   }
+}
+
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+.js-fade.scrollIn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }/*# sourceMappingURL=style.css.map */
