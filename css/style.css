@@ -1828,6 +1828,9 @@ section .contents {
   }
 }
 
+.company_table tr:last-of-type th, .company_table tr td {
+  padding-bottom: 0;
+}
 .company_table th, .company_table td {
   color: #fff;
   font-size: 1.4rem;

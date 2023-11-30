@@ -1466,6 +1466,11 @@ section {
 }
 
 .company_table {
+	tr {
+		&:last-of-type th,td {
+			padding-bottom: 0;
+		}
+	}
 	th,td {
 		color: $white;
 		font-size: 1.4rem;
