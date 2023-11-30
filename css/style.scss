@@ -1401,6 +1401,10 @@ section {
 		margin-top: 48px;
 		width: 100%;
 	}
+	&:hover {
+		opacity: 0.7;
+	}
+
 	button {
 		background: $black;
 		color: $white;
@@ -1412,6 +1416,82 @@ section {
 		}
 		&:hover {
 			cursor: pointer;
+		}
+	}
+}
+
+/* company
+----------------------------------------------------*/
+#company {
+	margin: 80px auto;
+	@media screen and (max-width: $bp-sp) {
+		margin: 54px auto 0;
+	}
+}
+
+.company_header {
+	padding-top: 80px;
+	@media screen and (max-width: $bp-sp) {
+		padding-top: 64px;
+	}
+}
+
+.company_body {
+	background: #222;
+	display: flex;
+	position: relative;
+	width: 100%;
+	@media screen and (max-width: $bp-sp) {
+		flex-direction: column;
+	}
+
+	&--inner {
+		padding: 180px 0 0;
+		@media screen and (max-width: $bp-sp) {
+			padding: 48px 0;
+		}
+	}
+}
+
+.company_img {
+	width: 480px;
+	@media screen and (max-width: $bp-sp) {
+		width: 100%;
+		img {
+			object-fit: cover;
+			height: 250px;
+			width: 100%;
+		}
+	}
+}
+
+.company_table {
+	th,td {
+		color: $white;
+		font-size: 1.4rem;
+		font-weight: normal;
+		line-height: 2;
+		padding-bottom: 36px;
+		text-align: left;
+		vertical-align: top;
+		@media screen and (max-width: $bp-sp) {
+			font-size: 1.2rem;
+			line-height: 1.5;
+			padding-bottom: 16px;
+		}
+	}
+
+	th {
+		padding-right: 30px;
+		@media screen and (max-width: $bp-sp) {
+			padding-right: 0;
+			width: 29%;
+		}
+	}
+
+	td {
+		@media screen and (max-width: $bp-sp) {
+			line-height: 1.6;
 		}
 	}
 }

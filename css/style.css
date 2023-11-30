@@ -1755,6 +1755,9 @@ section .contents {
     width: 100%;
   }
 }
+.contact_btn:hover {
+  opacity: 0.7;
+}
 .contact_btn button {
   background: #000;
   color: #fff;
@@ -1769,4 +1772,89 @@ section .contents {
 }
 .contact_btn button:hover {
   cursor: pointer;
+}
+
+/* company
+----------------------------------------------------*/
+#company {
+  margin: 80px auto;
+}
+@media screen and (max-width: 768px) {
+  #company {
+    margin: 54px auto 0;
+  }
+}
+
+.company_header {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .company_header {
+    padding-top: 64px;
+  }
+}
+
+.company_body {
+  background: #222;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .company_body {
+    flex-direction: column;
+  }
+}
+.company_body--inner {
+  padding: 180px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .company_body--inner {
+    padding: 48px 0;
+  }
+}
+
+.company_img {
+  width: 480px;
+}
+@media screen and (max-width: 768px) {
+  .company_img {
+    width: 100%;
+  }
+  .company_img img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+}
+
+.company_table th, .company_table td {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2;
+  padding-bottom: 36px;
+  text-align: left;
+  vertical-align: top;
+}
+@media screen and (max-width: 768px) {
+  .company_table th, .company_table td {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 16px;
+  }
+}
+.company_table th {
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .company_table th {
+    padding-right: 0;
+    width: 29%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .company_table td {
+    line-height: 1.6;
+  }
 }/*# sourceMappingURL=style.css.map */
