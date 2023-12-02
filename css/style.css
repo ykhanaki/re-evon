@@ -335,6 +335,11 @@ header .logo {
 header .logo.issmall {
   width: 100px;
 }
+header .logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   header nav {
     display: none;
@@ -1760,6 +1765,7 @@ section .contents {
 }
 .contact_btn button {
   background: #000;
+  border: none;
   color: #fff;
   font-size: 2rem;
   height: 80px;

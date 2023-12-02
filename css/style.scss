@@ -151,6 +151,11 @@ header {
 		&.issmall {
 			width: 100px;
 		}
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
 	}
 	nav {
 		@media screen and (max-width: $bp-sp) {
@@ -1407,6 +1412,7 @@ section {
 
 	button {
 		background: $black;
+		border: none;
 		color: $white;
 		font-size: 2rem;
 		height: 80px;
