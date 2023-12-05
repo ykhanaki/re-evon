@@ -5,7 +5,29 @@
 			$('.hamburger-menu').toggleClass('hamburger-menu--open')
 			$('header nav').toggleClass('active')
 		});
+
+		$(document).ready(function(){
+			if (window.matchMedia('(max-width: 767px)').matches) {
+			//767pxまでの画面サイズの時の処理
+			$('header nav ul li a').on('click', function () {
+					$('header nav').slideToggle(500);
+						$('.hamburger-menu').toggleClass('hamburger-menu--open');
+						$('header nav').toggleClass('active');
+				});
+			}
+		});
 	});
+</script>
+
+
+<script>
+	$(document).ready(function(){
+	if (window.matchMedia('(max-width: 767px)').matches) {
+
+			//767pxまでの画面サイズの時の処理
+
+	}
+});
 </script>
 
 <div class="logo"><a href="../index.html"></a></div>

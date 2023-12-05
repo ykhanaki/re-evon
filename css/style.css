@@ -205,8 +205,14 @@ template {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 74px;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 72px;
+  }
 }
 
 body {
