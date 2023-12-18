@@ -1512,15 +1512,24 @@ section {
 }
 
 .js-fade {
-	opacity: 0;
-	visibility: hidden;
-	transform: translateY(50px);
-	transition: opacity 1s,visibility 1s, transform 1s;
+	// opacity: 0;
+	// visibility: hidden;
+	// transform: translateY(50px);
+	// transition: opacity 1s,visibility 1s, transform 1s;
+	opacity : 0;
+  transform: translateY(24px);
+  transition: 1s;
 
-	&.scrollIn {
-		opacity: 1;
-		visibility: visible;
-		transform: translateY(0px);
-	}
+
+	// &.scrollIn {
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// 	transform: translateY(0px);
+	// }
 }
 
+// .fadein {
+// 	opacity : 0;
+//   transform: translateY(24px);
+//   transition: 1s;
+// }

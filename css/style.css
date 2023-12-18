@@ -1876,12 +1876,6 @@ section .contents {
 
 .js-fade {
   opacity: 0;
-  visibility: hidden;
-  transform: translateY(50px);
-  transition: opacity 1s, visibility 1s, transform 1s;
-}
-.js-fade.scrollIn {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
+  transform: translateY(24px);
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */
